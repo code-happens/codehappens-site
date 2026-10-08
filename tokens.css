@@ -1,41 +1,57 @@
-/* Hallmark · tokens · codehappens.dev · theme: Brutal
- * axes: paper light / display-heavy condensed / accent cool (cobalt 264)
+/* Hallmark · tokens · codehappens.dev · route: custom (bespoke)
+ * axes: paper light / display-heavy / accent warm + cool (red 28, cobalt 264)
  */
 :root {
-  --color-paper:   oklch(95% 0.012 95);
-  --color-paper-2: oklch(90% 0.016 95);
-  --color-ink:     oklch(17% 0.012 95);
-  --color-muted:   oklch(38% 0.012 95);
-  --color-accent:  oklch(46% 0.21 264);
-  --color-focus:   oklch(46% 0.21 264);
+  color-scheme: light;
+  --color-games:        oklch(88% 0.17 96);
+  --color-games-deep:   oklch(80% 0.17 90);
+  --color-apps:         oklch(92% 0.03 250);
+  --color-apps-deep:    oklch(84% 0.05 250);
+  --color-ink:          oklch(21% 0.035 270);
+  --color-card:         oklch(98% 0.015 96);
+  --color-cap-text:     oklch(98% 0.02 96);
+  --color-red:          oklch(57% 0.22 28);
+  --color-red-hi:       oklch(66% 0.2 32);
+  --color-red-side:     oklch(40% 0.16 26);
+  --color-cobalt:       oklch(46% 0.21 264);
+  --color-cobalt-hi:    oklch(56% 0.19 262);
+  --color-cobalt-side:  oklch(30% 0.15 266);
 
-  --font-display: "Anton", "Haettenschweiler", "Arial Narrow", sans-serif;
+  --font-display: "Bowlby One", "Arial Black", "Impact", sans-serif;
   --font-body:    "IBM Plex Mono", ui-monospace, "DejaVu Sans Mono", monospace;
 
-  --text-xs:        0.75rem;
-  --text-sm:        0.8125rem;
-  --text-base:      1rem;
-  --text-md:        1.25rem;
-  --text-lg:        1.5rem;
-  --text-xl:        clamp(1.75rem, 3vw + 1rem, 2.75rem);
-  --text-display:   clamp(2.75rem, 9vw + 0.5rem, 6rem);
+  --text-sm:      0.8125rem;
+  --text-base:    1rem;
+  --text-md:      1.25rem;
+  --text-display: clamp(3.25rem, 17vw, 8.5rem);
 
-  --space-2xs: 0.25rem;
-  --space-xs:  0.5rem;
-  --space-sm:  0.75rem;
-  --space-md:  1rem;
-  --space-lg:  1.5rem;
-  --space-xl:  2.5rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
   --space-2xl: 4rem;
-  --space-3xl: 6rem;
 
-  --page-gutter: clamp(1rem, 4vw, 3rem);
-  --page-max:    72rem;
+  --page-max: 46rem;
 
-  --rule-heavy: 3px;
-  --rule-thin:  1px;
-  --radius:     0;
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-long:  520ms;
 
-  --dur-short: 120ms;
-  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --tile: 2.25rem;
+  --btn:  clamp(9rem, min(30vw, 46vh), 18rem);
+  --lift: calc(var(--btn) * 0.11);
+
+  --cut-games: polygon(0 0, 56% 0, 44% 100%, 0 100%);
+  --cut-apps:  polygon(56% 0, 100% 0, 100% 100%, 44% 100%);
+  --slide-apps: translate(40%, 0);
+}
+@media (max-aspect-ratio: 1/1) {
+  :root {
+    --btn: clamp(8.5rem, min(48vw, 27vh), 15rem);
+    --cut-games: polygon(0 0, 100% 0, 100% 44%, 0 56%);
+    --cut-apps:  polygon(0 56%, 100% 44%, 100% 100%, 0 100%);
+    --slide-apps: translate(0, 40%);
+  }
 }

@@ -1,61 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page--gate">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
-<title>Code Happens — apps for Android</title>
-<meta name="description" content="Code Happens makes apps for Android. Currently: Mirkoład, an unofficial native client for Wykop.pl.">
+<title>Code Happens — games and apps for Android</title>
+<meta name="description" content="Code Happens makes games and apps for Android.">
 <link rel="canonical" href="https://codehappens.dev/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/Anton-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="site.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/BowlbyOne-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
 
-<header class="slab">
-  <div class="wrap slab__in">
-    <a class="slab__mark" href="/">Code Happens</a>
-    <nav class="slab__nav" aria-label="Primary">
-      <a class="slab__link" href="#apps">Apps</a>
-      <a class="slab__link" href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<main class="gate">
+  <div class="field field--games" aria-hidden="true"></div>
+  <div class="field field--apps" aria-hidden="true"></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <line class="seam__wide" x1="56" y1="0" x2="44" y2="100"/>
+    <line class="seam__tall" x1="0" y1="56" x2="100" y2="44"/>
+  </svg>
 
-<main>
-  <section class="wrap intro">
-    <h1 class="intro__title">Apps for Android.</h1>
-  </section>
+  <h1 class="mark">Code Happens</h1>
 
-  <section class="wrap block" id="apps">
-    <h2 class="block__title">Apps</h2>
-    <ul class="index">
-      <li class="index__row">
-        <a class="entry" href="https://mirkolad.codehappens.dev/">
-          <img class="entry__icon" src="img/mirkolad.png" alt="" width="144" height="144">
-          <span class="entry__name">Mirkoład</span>
-          <span class="entry__what">Unofficial native client for Wykop.pl. In Polish.</span>
-          <span class="entry__state entry__state--live">Open site ↗</span>
-        </a>
-      </li>
-    </ul>
-  </section>
+  <nav aria-label="Sections">
+    <a class="door door--games" href="/games/">
+      <span class="door__in">
+        <span class="btn btn--round"><span class="btn__cap">Games</span></span>
+        <span class="door__note">Got five minutes? <span class="door__arrow" aria-hidden="true">→</span></span>
+      </span>
+    </a>
+    <a class="door door--apps" href="/apps/">
+      <span class="door__in">
+        <span class="btn btn--key"><span class="btn__cap">Apps</span></span>
+        <span class="door__note">Got things to do? <span class="door__arrow" aria-hidden="true">→</span></span>
+      </span>
+    </a>
+  </nav>
 
-  <section class="wrap block" id="contact">
-    <h2 class="block__title">Contact</h2>
-    <a class="contact__mail" href="mailto:contact@codehappens.dev">contact@codehappens.dev</a>
-    <p class="contact__note">Bug reports, questions, privacy requests. Written in English or Polish.</p>
-  </section>
+  <a class="contact" href="mailto:contact@codehappens.dev">contact@codehappens.dev</a>
 </main>
-
-<footer class="colophon">
-  <div class="wrap colophon__in">
-    <p>© 2026 Code Happens.</p>
-    <p><a href="https://mirkolad.codehappens.dev/privacy-policy.html">Mirkoład privacy policy</a></p>
-    <p>Set in Anton and IBM Plex Mono, both under the SIL Open Font License. This site sets no cookies and loads nothing from third parties.</p>
-  </div>
-</footer>
 
 </body>
 </html>

@@ -1,4 +1,1 @@
-# app-ads.txt for codehappens.dev
-# After the AdMob account is created, replace the line below with the one AdMob shows
-# (AdMob > Apps > View all apps > app-ads.txt), then remove the leading "# ".
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-9285131351952457, DIRECT, f08c47fec0942fa0
